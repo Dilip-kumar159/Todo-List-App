@@ -1,0 +1,19 @@
+{
+  "name": "todo_list_app",
+  "version": "1.0.0",
+  "description": "This is Todo List App",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Web",
+    "Application"
+  ],
+  "author": "Dilip V",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
