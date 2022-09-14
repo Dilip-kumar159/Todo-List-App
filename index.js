@@ -7,6 +7,10 @@ const port = 4000;
 //setting up the route
 app.use('/', require('./routes/index'));
 
+// Setting up the View Engine as ejs
+app.set('view engine', 'ejs');
+app.set('views','./views');
+
 // Starting the Server
 app.listen(port, function(err){
     if(err){
