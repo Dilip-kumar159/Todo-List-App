@@ -4,6 +4,10 @@ const app = express();
 
 const port = 4000;
 
+//setting up the route
+app.use('/', require('./routes/index'));
+
+// Starting the Server
 app.listen(port, function(err){
     if(err){
         console.log("Error while running the server " + err);
