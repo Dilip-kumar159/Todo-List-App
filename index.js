@@ -7,6 +7,9 @@ const port = 4000;
 //setting up the route
 app.use('/', require('./routes/index'));
 
+// Accessing database
+const db = require('./config/mongoose');
+
 // Setting up the View Engine as ejs
 app.set('view engine', 'ejs');
 app.set('views','./views');
