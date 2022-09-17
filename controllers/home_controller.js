@@ -45,7 +45,7 @@ module.exports.del = function (req, res) {
     // console.log(id);
     Task.findByIdAndDelete(id, function (err) {
         if (err) {
-            console.log('err in delete the task from databse');
+            console.log('err in delete the task from database');
             return;
         }
         return res.redirect('back');
