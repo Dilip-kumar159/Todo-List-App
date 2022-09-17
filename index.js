@@ -4,6 +4,10 @@ const app = express();
 
 const port = 4000;
 
+//parse for decoding the form-info
+app.use(express.urlencoded());
+
+
 //setting up the route
 app.use('/', require('./routes/index'));
 
